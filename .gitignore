@@ -28,5 +28,7 @@ bin/
 ### Mac OS ###
 .DS_Store
 
+*.iml
 .idea/
-FAANG_From_Scratch
+out/
+
