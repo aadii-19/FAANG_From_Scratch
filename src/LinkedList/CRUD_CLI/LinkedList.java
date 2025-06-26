@@ -5,7 +5,7 @@ public class LinkedList {
     private int size;
 
     // Creating an Object
-    LinkedList(){
+    public LinkedList(){
         this.size = 0;
     }
 
@@ -130,7 +130,9 @@ public class LinkedList {
         return prev;
     }
 
+
     // update
+
     public void update(int index, int val){
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Invalid Index!");

@@ -2,12 +2,15 @@ package LinkedList.CRUD_CLI;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main{
     public static void main(String[] args) throws Exception{
         Scanner sc = new Scanner(System.in);
         LinkedList list = new LinkedList();
+        System.out.print("Enter name: ");
+        String name = sc.nextLine();
+        System.out.println("\nHello "+name);
         while(true){
-            System.out.println("\n==== LINKED LIST MAIN MENU ====");
+            System.out.println("==== LINKED LIST MAIN MENU ====");
             System.out.println("1. Insert");
             System.out.println("2. Delete");
             System.out.println("3. Update");
@@ -141,7 +144,7 @@ public class Main {
                         second.insertAtLast(sc.nextInt());
                     }
                     list = list.Merge(list, second);
-                    System.out.println("✅ Lists merged successfully.");
+                    System.out.println("Lists merged successfully.");
                     list.display();
                     break;
                 case 11:
@@ -153,6 +156,7 @@ public class Main {
                     }
                     break;
                 case 0:
+                    System.out.println("Goodbye "+name+"!");
                     return;
                 default:
                     System.out.println("Invalid Choice");
